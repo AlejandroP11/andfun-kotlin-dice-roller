@@ -23,7 +23,7 @@ import androidx.appcompat.app.AppCompatActivity
 import java.util.Random
 
 class MainActivity : AppCompatActivity() {
-
+    lateinit var ventana: ImageView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         miBoton.setOnClickListener{
             rollDice()
         }
-
+        ventana = findViewById(R.id.dado)
     }
     private fun rollDice(){
         val numRandom = Random().nextInt(6) + 1
@@ -43,8 +43,6 @@ class MainActivity : AppCompatActivity() {
             5 -> R.drawable.dado_5
             else -> R.drawable.dado_6
         }
-        val ventana: ImageView = findViewById(R.id.dado)
         ventana.setImageResource(imagenRandom)
     }
 }
-
