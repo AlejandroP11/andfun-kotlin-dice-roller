@@ -34,8 +34,7 @@ class MainActivity : AppCompatActivity() {
         ventana = findViewById(R.id.dado)
     }
     private fun rollDice(){
-        val numRandom = Random().nextInt(6) + 1
-        val imagenRandom = when(numRandom){
+        val imagenRandom = when(Random().nextInt(6) + 1){
             1 -> R.drawable.dado_1
             2 -> R.drawable.dado_2
             3 -> R.drawable.dado_3
