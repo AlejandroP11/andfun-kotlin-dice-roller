@@ -20,7 +20,6 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
-import java.util.Random
 
 class MainActivity : AppCompatActivity() {
     lateinit var ventana: ImageView
@@ -34,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         ventana = findViewById(R.id.dado)
     }
     private fun rollDice(){
-        val imagenRandom = when(Random().nextInt(6) + 1){
+        val imagenRandom = when(shuf(1, 6)){
             1 -> R.drawable.kenya
             2 -> R.drawable.montenegro
             3 -> R.drawable.monaco
@@ -43,5 +42,8 @@ class MainActivity : AppCompatActivity() {
             else -> R.drawable.madagascar
         }
         ventana.setImageResource(imagenRandom)
+    }
+    fun shuf(start: Int, end: Int): Int {
+        return (start..end).shuffled().first()
     }
 }
