@@ -35,12 +35,12 @@ class MainActivity : AppCompatActivity() {
     }
     private fun rollDice(){
         val imagenRandom = when(Random().nextInt(6) + 1){
-            1 -> R.drawable.dado_1
-            2 -> R.drawable.dado_2
-            3 -> R.drawable.dado_3
-            4 -> R.drawable.dado_4
-            5 -> R.drawable.dado_5
-            else -> R.drawable.dado_6
+            1 -> R.drawable.kenya
+            2 -> R.drawable.montenegro
+            3 -> R.drawable.monaco
+            4 -> R.drawable.somalia
+            5 -> R.drawable.liechtenstein
+            else -> R.drawable.madagascar
         }
         ventana.setImageResource(imagenRandom)
     }
