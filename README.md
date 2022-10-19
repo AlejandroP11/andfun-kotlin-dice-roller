@@ -1,6 +1,6 @@
 ## Modificaciones realizadas dentro del proyecto
 Antes de comenzar a expplicar las modificaciones realizadas dentro de este proyecto, vamos a nombrarlas: 
-- [Idiomas String y String layout](#Idiomas String y String en el layout)
+- [Idiomas String y String layout](#Idiomas-String-y-String-en-el-layout)
 - [Imágenes en drawable](#Imágenes en drawable)
 - [Función diferente al random](#Función diferente al random)
 - [Nuevos botones con Material.io](#Nuevos botones con Material.io)
