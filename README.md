@@ -1,9 +1,9 @@
 ## Modificaciones realizadas dentro del proyecto
 Antes de comenzar a expplicar las modificaciones realizadas dentro de este proyecto, vamos a nombrarlas: 
-- [Idiomas String y String layout](#Idiomas)
-- [Imágenes en drawable](#Imágenes)
-- [Función diferente al random](#Función)
-- <a name="Mat"></a> Nuevos botones con Material.io
+- [Idiomas String y String layout](#Idiomas String y String en el layout)
+- [Imágenes en drawable](#Imágenes en drawable)
+- [Función diferente al random](#Función diferente al random)
+- [Nuevos botones con Material.io](#Nuevos botones con Material.io)
 ### Idiomas String y String en el layout
 En la creación de nuestra aplicación debemos tomar en cuenta la gran cantidad de personas de distintos 
 paises e idiomas que podría utilizarla, para no tener problemas con esto crearemos nuevos documentos
@@ -25,3 +25,4 @@ La función random, anteriormente utilizada, era la que se encargaba de decidir 
 mostrar por pantalla cada vez que se presione el botón, esta función ahora es realizada por la función
 shuffle(), que es una función que 'mezcla' el rango de números que le pasemos por parámetros, ambos 
 incluidos, y nos devolverá el número que quede en primera posición.
+### Nuevos botones con Material.io
