@@ -1,10 +1,10 @@
 ## Modificaciones realizadas dentro del proyecto
-Antes de comenzar a expplicar las modificaciones realizadas dentro de este proyecto, vamos a nombrarlas:
-    - Idiomas String
-    - String en el layout
-    - Imagenes en drawable
-    - Función diferente al random
-    - Nuevos botones con Material.io
+Antes de comenzar a expplicar las modificaciones realizadas dentro de este proyecto, vamos a nombrarlas: 
+- Idiomas String
+- String en el layout
+- Imagenes en drawable
+- Función diferente al random
+- Nuevos botones con Material.io
 ### Idiomas String
 En la creación de nuestra aplicación debemos tomar en cuenta la gran cantidad de personas de distintos 
 paises e idiomas que podría utilizarla, para no tener problemas con esto crearemos nuevos documentos
