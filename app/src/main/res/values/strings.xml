@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name" translatable="false">Dice Roller</string>
     <string name="tirar">Tirar</string>
+    <string name="pais">Nombre del país</string>
 </resources>

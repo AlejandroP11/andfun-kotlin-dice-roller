@@ -19,21 +19,31 @@ package com.example.android.diceroller
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
+
     lateinit var ventana: ImageView
+    lateinit var nom: TextView
+
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         val miBoton: Button = findViewById(R.id.tirarDado)
         miBoton.setOnClickListener{
             rollDice()
         }
+
         ventana = findViewById(R.id.dado)
+        nom = findViewById(R.id.pais)
     }
+
     private fun rollDice(){
+
         val imagenRandom = when(shuf(1, 6)){
+
             1 -> R.drawable.kenya
             2 -> R.drawable.montenegro
             3 -> R.drawable.monaco
@@ -41,9 +51,25 @@ class MainActivity : AppCompatActivity() {
             5 -> R.drawable.liechtenstein
             else -> R.drawable.madagascar
         }
+
         ventana.setImageResource(imagenRandom)
+        if (imagenRandom == R.drawable.kenya)
+            nom.text = "Kenya"
+        else if (imagenRandom == R.drawable.montenegro)
+            nom.text = "Montenegro"
+        else if (imagenRandom == R.drawable.monaco)
+            nom.text = "Monaco"
+        else if (imagenRandom == R.drawable.somalia)
+            nom.text = "Somalia"
+        else if (imagenRandom == R.drawable.liechtenstein)
+            nom.text = "Liechtenstein"
+        else if(imagenRandom == R.drawable.madagascar)
+            nom.text = "Madagascar"
+
     }
+
     fun shuf(start: Int, end: Int): Int {
         return (start..end).shuffled().first()
     }
+
 }
