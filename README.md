@@ -26,3 +26,14 @@ mostrar por pantalla cada vez que se presione el botón, esta función ahora es 
 shuffle(), que es una función que 'mezcla' el rango de números que le pasemos por parámetros, ambos 
 incluidos, y nos devolverá el número que quede en primera posición.
 ### Nuevos botones con Material.io
+La utilización de material.io es un supuesto fácil sobre el papel, pero una vez comenzada esta propuesta
+hubo un gran cantidad de problemas llegando a un punto final en donde el programa no tenía ningun error
+aparente, pero al ser instalada la aplicación esta se abría y cerraba automáticamente.
+Este proceso se comienza implementando la libreria Materials de Google, después de la sincronización de
+Gradle solo deberíamos cambiar el tema de nuestro proyecto en el documento Styles.xml dentro de la carpeta
+values, una vez realizados estos cambios los cambios se pondrán observar en el render de nuestro layout.
+En este momento se realizó la primera prueba de ejecución, dando distintos problemas, después de varios
+cambios tanto en el build.gradle subiendo y bajando versiones, como varias líneas agregadas al documento
+AndroidManifest.xml, para lograr, siquiera, la instalación de nuestro proyecto llegamos al punto anteriormente
+mencionado, la aplicación está instalada y no tiene ningún fallo evidente, pero al ser abierta se cierra de
+manera automática.
